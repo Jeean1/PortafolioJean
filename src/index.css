@@ -1,0 +1,451 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.NavContainer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+
+.HomeContainer {
+  width: 100%;
+  margin-top: 7rem;
+  height: 40rem;
+}
+
+.picture_Info {
+  display: flex;
+  width: 80%;
+  margin: 1% auto;
+}
+
+.presentationContainer {
+  width: 100%;
+}
+
+.leftPresentation {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: end;
+  justify-content: end;
+}
+
+.gif {
+  background-image: url("https://nebigdatahub.org/wp-content/uploads/2019/11/7T9364v.gif");
+  width: 829px;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+.imgContainerHome {
+  height: 15rem;
+  width: 50%;
+  display: flex;
+  display: flex;
+  margin: 30px 0 0 230px;
+}
+
+.imgW {
+  max-width: 100%;
+  border-radius: 40%;
+  max-height: 100%;
+}
+
+.saludo {
+  text-align: center;
+  height: 10rem;
+  width: 14rem;
+}
+
+.saludo h3 {
+  color: aliceblue;
+  margin-top: 5rem;
+}
+
+.cardPresentation {
+  width: 50%;
+  height: 30rem;
+  margin: 10% auto;
+  display: flex;
+  gap: 3rem;
+}
+
+.imageContainer {
+  width: 55%;
+  height: 75%;
+  /* margin: auto; */
+  margin: 3rem 0 0 12rem;
+}
+
+.imgStyle {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+}
+
+.textPresentation {
+  height: 25%;
+  margin-top: 10rem;
+}
+
+.aboutMeContainer {
+  width: 100%;
+  background-image: url("./Imgs/bgImg.jpg");
+}
+
+.aboutMeContainer h1 {
+  text-align: center;
+}
+
+.aboutMeSetion {
+  width: 85%;
+  margin: 5% auto;
+  display: flex;
+}
+
+.aboutMeText {
+  text-align: center;
+}
+
+.width50 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.skillsContainer {
+  width: 100%;
+}
+
+.skillsContainer h1 {
+  text-align: center;
+}
+
+.skills_section {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.skillImg {
+  height: 20rem;
+  width: 100%;
+}
+
+.skills_container_img {
+  width: 25%;
+  margin: 3rem;
+  height: 15rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.rightPosition {
+  display: flex;
+  justify-content: end;
+}
+
+.skills_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: 1em;
+  grid-template-areas:
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+}
+
+.app_img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app_grid1 {
+  grid-area: img1;
+  display: flex;
+  justify-content: center;
+}
+.app_grid2 {
+  grid-area: img2;
+  display: flex;
+  justify-content: center;
+}
+.app_grid3 {
+  grid-area: img3;
+  display: flex;
+  justify-content: center;
+}
+.app_grid4 {
+  grid-area: img4;
+  display: flex;
+  justify-content: center;
+}
+.app_grid5 {
+  grid-area: img5;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.portafolio {
+  display: flex;
+  gap: 1em;
+  width: 90%;
+  margin: 5% auto;
+}
+
+.picture_port {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.app_exp_img {
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+}
+
+.contactMe_Info {
+  width: 50%;
+  margin: 3% auto;
+}
+
+.redes {
+  display: flex;
+  gap: 1rem;
+}
+
+.email {
+  display: flex;
+  gap: 1rem;
+}
+
+.phone {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactMe_EmailPhone {
+  width: 50%;
+  margin: 3% auto;
+}
+
+.apps {
+  position: relative;
+  overflow: hidden;
+}
+
+.apps::before {
+  content: "hola";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  cursor: pointer;
+
+  /* transform: scale(0); */
+  transform: translateY(350px);
+  transition: 1s;
+  transform-origin: bottom;
+  /* opacity: 0; */
+}
+
+.apps:hover::before {
+  cursor: pointer;
+  transform: translateY(0);
+  /* opacity: 1; */
+  background-color: rgba(0, 0, 0, 0.656);
+  transform-origin: bottom;
+}
+
+.javascriptMessage::before {
+  content: "Habilidad en JavaScript para programar cualquier tipo de función, hacer todo dinámicamente mientras realizo un código simple y sencillo para qué sea mucho más sostenible y escalable.";
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.5rem;
+}
+
+.reactMessage::before {
+  content: "Gran dominio de los hooks en react & usando su librería Redux y a su vez consumiendo Bases de datos.";
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.cssMessage::before {
+  content: "Habilidades en diseño responsivo & a su vez animaciones, creando una interfaz agradable para el usuario.";
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.htmlMessage::before {
+  content: "Enmaquetación y diseño en páginas Web de todo tipo bien estructuradas y sencillas para entender su código.";
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.gitMessage::before {
+  content: "Manejo de control de versiones, para así ejecutar un trabajo en equipo coordinado y eficáz.";
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.contactme_Container {
+  display: flex;
+  margin: 5rem 0;
+}
+
+.contactme_formSection {
+  width: 50%;
+}
+
+.formContainer {
+  width: 70%;
+}
+
+.linkProject {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.linkProject:hover {
+  position: absolute;
+  top: 1px;
+  background: rgba(0, 0, 0, 0.581);
+  opacity: 1;
+  transition: 1.2s;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 15rem;
+  background: #000;
+}
+
+.footerSection {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.centerIcons {
+  margin: 1% 20rem;
+}
+
+@media (max-width: 768px) {
+  .cardPresentation {
+    width: 50%;
+    height: 30rem;
+    margin: 0;
+    display: flex;
+    gap: 6rem;
+  }
+  .imgStyle {
+    width: auto;
+    height: 100%;
+    border-radius: 30%;
+  }
+  .imageContainer {
+    width: 55%;
+    height: 75%;
+    /* margin: auto; */
+    margin: 3rem 0 0 7rem;
+  }
+
+  .aboutMeSetion {
+    width: 100%;
+  }
+
+  .skills_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 187px;
+    gap: 1em;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+  }
+  .app_img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .javascriptMessage::before {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  .reactMessage::before {
+    padding: 2.5rem;
+  }
+
+  .htmlMessage::before {
+    padding: 2.5rem;
+  }
+
+  .cssMessage::before {
+    padding: 2.5rem;
+  }
+
+  .gitMessage::before {
+    padding: 3rem;
+  }
+
+  .portafolio {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .linkProject:hover {
+    padding: 3rem;
+  }
+
+  .contactme_Container {
+    flex-direction: column;
+  }
+
+  .contactme_formSection {
+    width: 100%;
+  }
+
+  .formContainer {
+    width: 70%;
+    margin: auto;
+  }
+
+  .centerIcons {
+    margin: 1% 7rem;
+  }
+}
