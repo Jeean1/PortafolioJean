@@ -71,6 +71,8 @@
   margin: 10% auto;
   display: flex;
   gap: 3rem;
+  position: relative;
+  z-index: 50;
 }
 
 .imageContainer {
@@ -104,6 +106,8 @@
   width: 85%;
   margin: 5% auto;
   display: flex;
+  position: relative;
+  z-index: 50;
 }
 
 .aboutMeText {
@@ -127,6 +131,8 @@
 .skills_section {
   width: 80%;
   margin: 5% auto;
+  position: relative;
+  z-index: 50;
 }
 
 .skillImg {
@@ -202,6 +208,8 @@
   gap: 1em;
   width: 90%;
   margin: 5% auto;
+  position: relative;
+  z-index: 50;
 }
 
 .picture_port {
@@ -312,6 +320,8 @@
 .contactme_Container {
   display: flex;
   margin: 5rem 0;
+  position: relative;
+  z-index: 50;
 }
 
 .contactme_formSection {
@@ -347,6 +357,8 @@
   width: 100%;
   height: 15rem;
   background: #000;
+  position: relative;
+  z-index: 50;
 }
 
 .footerSection {
@@ -448,4 +460,9 @@
   .centerIcons {
     margin: 1% 7rem;
   }
+}
+
+.particlePosition {
+  position: fixed;
+  top: 1%;
 }
